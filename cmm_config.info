@@ -68,5 +68,7 @@ features[paragraphs][] = card_group
 features[paragraphs][] = text
 features[taxonomy][] = tags
 features[user_role][] = administrator
+features[variable][] = admin_theme
 features[variable][] = pathauto_node_pattern
+features[variable][] = theme_default
 project path = sites/all/modules/features
