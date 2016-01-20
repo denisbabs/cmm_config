@@ -14,7 +14,7 @@ function cmm_config_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -10,
     'editor' => 'ckeditor',
@@ -38,6 +38,16 @@ function cmm_config_filter_default_formats() {
       ),
       'filter_htmlcorrector' => array(
         'weight' => -44,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'entity_embed' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'editor_align' => array(
+        'weight' => 5,
         'status' => 1,
         'settings' => array(),
       ),
