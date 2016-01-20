@@ -31,43 +31,6 @@ function cmm_config_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_background_image'.
-  $field_bases['field_background_image'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_background_image',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
-  // Exported field_base: 'field_card'.
-  $field_bases['field_card'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_card',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'paragraphs',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'paragraphs',
-  );
-
   // Exported field_base: 'field_file_image_alt_text'.
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
@@ -130,21 +93,6 @@ function cmm_config_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
-  );
-
-  // Exported field_base: 'field_page_body'.
-  $field_bases['field_page_body'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_page_body',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'paragraphs',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'paragraphs',
   );
 
   // Exported field_base: 'field_tags'.

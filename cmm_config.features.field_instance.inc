@@ -22,6 +22,9 @@ function cmm_config_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
         ),
         'type' => 'image',
         'weight' => 0,
@@ -82,7 +85,11 @@ function cmm_config_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -123,6 +130,9 @@ function cmm_config_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
@@ -167,80 +177,6 @@ function cmm_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-text-field_background_image'.
-  $field_instances['paragraphs_item-text-field_background_image'] = array(
-    'bundle' => 'text',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'bg_image_formatter',
-        'settings' => array(
-          'css_settings' => array(
-            'bg_image_attachment' => 'scroll',
-            'bg_image_background_size' => '',
-            'bg_image_background_size_ie8' => 0,
-            'bg_image_color' => '#FFFFFF',
-            'bg_image_important' => 1,
-            'bg_image_media_query' => 'all',
-            'bg_image_repeat' => 'no-repeat',
-            'bg_image_selector' => '.test',
-            'bg_image_x' => 'left',
-            'bg_image_y' => 'top',
-          ),
-          'image_style' => '',
-          'multiple' => 0,
-        ),
-        'type' => 'bg_image_formatter',
-        'weight' => 2,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_background_image',
-    'label' => 'Background Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 0,
-    ),
-  );
-
   // Exported field_instance: 'paragraphs_item-text-field_text'.
   $field_instances['paragraphs_item-text-field_text'] = array(
     'bundle' => 'text',
@@ -251,7 +187,11 @@ function cmm_config_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -283,7 +223,6 @@ function cmm_config_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Background Image');
   t('Card');
   t('Image');
   t('Text');
